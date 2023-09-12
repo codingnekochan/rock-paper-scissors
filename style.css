@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    /* font-family: 'Henny Penny', cursive;
+font-family: 'Tsukimi Rounded', sans-serif; */
+  }
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(255,234,254);
+background: linear-gradient(150deg, rgba(204,193,255,1) 30%, rgba(172,125,136,1) 90%);
+    /* background: linear-gradient(150deg, rgba(248,236,209,1) 30%, rgba(222,182,171,1) 70%, rgba(172,125,136,1) 90%, rgba(133,88,111,1) 100%); */
+    /* background: linear-gradient(135deg, rgba(249,245,246,1) 15%, rgba(248,232,238,1) 40%, rgba(253,206,223,1) 60%, rgba(242,190,209,1) 90%); */
+    position:relative;
+}
+img{
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,p{
+    text-align: center;
+    line-height: 150%;
+}
+h1{
+    font-family: 'Henny Penny', cursive;
+    font-size: 4rem;
+    padding: 4.2rem 0 2rem;
+}
+h2,
+p{
+    font-family:'Tsukimi Rounded', sans-serif;
+    margin-bottom: 1.6rem;
+}
+p{
+    font-size: 2rem;
+
+}
+h2{
+    font-size: 4rem;
+}
+.player_score,
+.cmptr_score{
+    font-size: 6rem;
+}
+.btn_container{
+    width: 45%;
+    height:200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.btn{
+    border-radius: 50%;
+    background: rgba(137, 1, 137, 0.713);
+    padding: .6rem; 
+}
+.btn,
+.reset_btn{
+    border:none; 
+}
+.rnd_winner,
+.game_winner,
+.reset_btn{
+    font-weight: 700;
+}
+.game_reset{
+    /* width: 100%; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.reset_btn{
+    font-size: 2rem;
+    padding:1.5rem 1.5rem;
+    background: rgba(35, 37, 134,1);
+    border-radius: 12px;
+    color:rgba(239, 231, 231, 0.919);
+    box-shadow: 3px 3px 15px 5px rgba(137, 1, 137, 0.5) ;
+}
+.btn:hover,
+.reset_btn:hover{
+    transform: scale(1.1);
+    transition: transform .07s ease-in;
+}
