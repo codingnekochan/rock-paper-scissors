@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tsukimi+Rounded:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
@@ -19,19 +20,19 @@
             <h2>You <span id="player_score" class="player_score">0</span> : Mr Computer <span id="cmptr_score" class="cmptr_score">0</span></h2>
         </div>
         <div class="btn_container">
-            <button class ="btn btn_rck">
+            <button id="rock" class ="btn btn_rck">
                 <img src="./rps_icons/Stone.svg" class="btn_rck--img" alt="rock">
             </button>
-            <button class ="btn btn_paper">
+            <button id="paper" class ="btn btn_paper">
                 <img src="./rps_icons/Paper.svg" class="btn_paper --img" alt="rock">
             </button>
-            <button class="btn btn_scssrs">
+            <button id="scissors" class="btn btn_scssrs">
                 <img src="./rps_icons/Scissors.svg" class="btn_scissors--img">
             </button>
         </div>
         
-        <div id="rps_rnd--winner" class="rnd_winner"><p>You picked x and Computer picked Y</p></div>
-        <div id="rps_game--winner" class="game_winner"><p>You lost this round, want to play again</p></div>
+        <div id="rps_rnd--winner" class="rnd_winner"></div>
+        <div id="rps_game--winner" class="game_winner"></div>
         <div class="game_reset">
             <button class="reset_btn">Play Again</button>
         </div>
