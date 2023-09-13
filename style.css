@@ -6,16 +6,13 @@
 html{
     font-size: 62.5%;
     /* 1rem = 10px */
-    /* font-family: 'Henny Penny', cursive;
-font-family: 'Tsukimi Rounded', sans-serif; */
   }
 body{
     width: 100%;
     min-height: 100vh;
     background: rgb(255,234,254);
-background: linear-gradient(150deg, rgba(204,193,255,1) 30%, rgba(172,125,136,1) 90%);
-    /* background: linear-gradient(150deg, rgba(248,236,209,1) 30%, rgba(222,182,171,1) 70%, rgba(172,125,136,1) 90%, rgba(133,88,111,1) 100%); */
-    /* background: linear-gradient(135deg, rgba(249,245,246,1) 15%, rgba(248,232,238,1) 40%, rgba(253,206,223,1) 60%, rgba(242,190,209,1) 90%); */
+    color: rgba(10, 10, 40,1);
+    background: linear-gradient(150deg, rgba(204,193,255,1) 30%, rgba(172,125,136,1) 90%);
     position:relative;
 }
 img{
@@ -28,13 +25,14 @@ h1,h2,p{
     line-height: 150%;
 }
 h1{
-    font-family: 'Henny Penny', cursive;
+    font-family: 'Righteous', cursive;
     font-size: 4rem;
-    padding: 4.2rem 0 2rem;
+    padding: 4.2rem .5rem 2rem;
 }
 h2,
-p{
-    font-family:'Tsukimi Rounded', sans-serif;
+p,
+.reset_btn{
+    font-family:'Rubik', sans-serif;
     margin-bottom: 1.6rem;
 }
 p{
@@ -53,6 +51,7 @@ h2{
     height:200px;
     margin: auto;
     display: flex;
+    gap:1rem;
     justify-content: space-between;
     align-items:center;
 }
@@ -73,7 +72,7 @@ h2{
 .rnd_winner,
 .game_winner,
 .reset_btn{
-    font-weight: 700;
+    font-weight: 600;
 }
 .game_reset{
     /* width: 100%; */
@@ -93,4 +92,33 @@ h2{
 .reset_btn:hover{
     transform: scale(1.1);
     transition: transform .07s ease-in;
+}
+@media (max-width: 425px){
+    h1{
+        font-size:3 rem;
+        padding: 5rem 2rem 3rem;
+    }
+    h2,
+    p,
+    .reset_btn{
+        font-family:'Rubik', sans-serif;
+        margin-bottom: 1.6rem;
+    }
+    h2{
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+    p{
+        padding: 0 1rem;
+    }
+    .btn{
+        padding: .25rem; 
+    }
+    .player_score,
+    .cmptr_score{
+        font-size: 4rem;
+    }
+.btn_container{
+    width: 60%
+}
 }
