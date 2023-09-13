@@ -90,23 +90,22 @@ button.addEventListener('click',()=>{
         }
     }
    computerScoreCounter()
-   // game ender
+   // code that runs when either player reaches score of 5
 
    if (playerCount === 5 && computerCount < 5){
-       playerCount=0;
-       computerCount = 0;
-       buttonRock.disabled = true;
-       buttonPaper.disabled = true;
-       buttonScissors.disabled = true;
-       announcement.textContent = "Congratulations! You win! Would you like to play again?"
+        endGame()
+        announcement.textContent = "Congratulations! You win! Would you like to play again?"
    }
    if (computerCount === 5 && playerCount < 5){
-      computerCount= 0;
-      playerCount = 0;
-      buttonRock.disabled = true;
-      buttonPaper.disabled = true;
-      buttonScissors.disabled = true;
-      announcement.textContent = "Oops! You've been defeated! Play again?"
+        endGame()    
+        announcement.textContent = "Oops! You've been defeated! Play again?"
+   }
+   function endGame(){
+    computerCount= 0;
+    playerCount = 0;
+    buttonRock.disabled = true;
+    buttonPaper.disabled = true;
+    buttonScissors.disabled = true;
    }
 }));
 
@@ -114,8 +113,8 @@ button.addEventListener('click',()=>{
 function resetGame(){
     announcement.textContent = "";
     para.textContent = "";
-    playerScore.textContent= playerCount;
-    computerScore.textContent= computerCount;
+    playerScore.textContent= playerCount-=playerCount;
+    computerScore.textContent= computerCount-=computerCount;
     buttonRock.disabled =false;
     buttonPaper.disabled = false;
     buttonScissors.disabled = false;
