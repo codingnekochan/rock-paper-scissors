@@ -61,6 +61,11 @@ h2{
     background: rgba(137, 1, 137, 0.713);
     padding: .6rem; 
 }
+.btn:disabled,
+.btn:disabled:hover{
+    background: rgba(137, 1, 137, 0.4);
+    transform: scale(1);
+}
 .btn,
 .reset_btn{
     border:none; 
